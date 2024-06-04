@@ -20,6 +20,7 @@
 // -- END LICENSE BLOCK ------------------------------------------------
 
 #include <cstdio>
+#include <iso646.h> 
 
 #include "sick_safevisionary_base/CRC.h"
 #include "sick_safevisionary_base/SafeVisionaryData.h"

@@ -23,6 +23,7 @@
 
 #  include <memory>
 #  include <sstream>
+#include <iso646.h> 
 
 #  include <chrono>
 #  include <random>
@@ -123,8 +124,11 @@ VisionaryAutoIPScan::doScan(int timeOut, const std::string& broadcastAddress, ui
       std::stringstream stringStream(xmlPayload);
       try
       {
-        DeviceInfo dI = parseAutoIPXml(stringStream);
-        deviceList.push_back(dI);
+        std::optional<DeviceInfo> dI = parseAutoIPXml(stringStream);
+        if (dI.has_value())
+        {
+          deviceList.push_back(dI.value());
+        }
       }
       catch (...)
       {
@@ -134,16 +138,17 @@ VisionaryAutoIPScan::doScan(int timeOut, const std::string& broadcastAddress, ui
   return deviceList;
 }
 
-VisionaryAutoIPScan::DeviceInfo
+std::optional <VisionaryAutoIPScan::DeviceInfo>
 VisionaryAutoIPScan::parseAutoIPXml(std::stringstream& rStringStream)
 {
   // Parse XML string into DOM
   tinyxml2::XMLDocument tree;
-  auto tXMLError = tree.Parse(rStringStream.str());
+  std::string xmlStr = rStringStream.str();
+  auto tXMLError = tree.Parse(xmlStr.c_str(), xmlStr.size());
   if (tXMLError != tinyxml2::XMLError::XML_SUCCESS)
   {
     std::printf("Reading XML tree in AutoIP NetScan result failed.");
-    return false;
+    return {}; //false;
   }
 
   DeviceInfo dI;

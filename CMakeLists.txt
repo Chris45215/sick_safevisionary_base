@@ -1,10 +1,14 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.5)
 project(sick_safevisionary_base)
 
 if (NOT CMAKE_CONFIGURATION_TYPES AND NOT CMAKE_BUILD_TYPE)
   message("${PROJECT_NAME}: You did not request a specific build type: selecting 'Release'.")
   set(CMAKE_BUILD_TYPE Release)
 endif()
+
+## Add pybind11
+set(pybind11_DIR C:\\Users\\sensory\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\pybind11\\share\\cmake\\pybind11)
+find_package(pybind11 REQUIRED)
 
 
 ## System dependencies are found with CMake's conventions

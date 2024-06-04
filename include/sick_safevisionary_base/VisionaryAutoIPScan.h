@@ -23,6 +23,7 @@
 
 #include <string>
 #include <vector>
+#include <optional>
 
 namespace visionary {
 
@@ -52,7 +53,7 @@ public:
                                  uint16_t port                       = DEFAULT_PORT);
 
 private:
-  DeviceInfo parseAutoIPXml(std::stringstream& rStringStream);
+  std::optional<DeviceInfo> parseAutoIPXml(std::stringstream& rStringStream);
   static const short DEFAULT_PORT = 30718;
 };
 
