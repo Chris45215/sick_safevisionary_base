@@ -41,6 +41,7 @@ VisionaryAutoIPScan::VisionaryAutoIPScan() {}
 
 VisionaryAutoIPScan::~VisionaryAutoIPScan() {}
 
+/*
 std::vector<VisionaryAutoIPScan::DeviceInfo>
 VisionaryAutoIPScan::doScan(int timeOut, const std::string& broadcastAddress, uint16_t port)
 {
@@ -137,7 +138,9 @@ VisionaryAutoIPScan::doScan(int timeOut, const std::string& broadcastAddress, ui
   }
   return deviceList;
 }
+*/
 
+/*
 std::optional <VisionaryAutoIPScan::DeviceInfo>
 VisionaryAutoIPScan::parseAutoIPXml(std::stringstream& rStringStream)
 {
@@ -191,12 +194,12 @@ VisionaryAutoIPScan::parseAutoIPXml(std::stringstream& rStringStream)
     ptAttr = ptDataSetsTree->FindAttribute("IPMask");
     if (ptAttr != 0)
     {
-      dI.subNet = ptAttr->Value();
+      dI.SubNet = ptAttr->Value();
     }
   }
 
   return dI;
 }
-
+*/
 } // namespace visionary
 #endif
