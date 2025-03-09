@@ -139,11 +139,13 @@ VisionaryAutoIPScan::parseAutoIPXml(std::stringstream& rStringStream)
 {
   // Parse XML string into DOM
   tinyxml2::XMLDocument tree;
-  auto tXMLError = tree.Parse(rStringStream.str());
+  //auto tXMLError = tree.Parse(rStringStream.str()); //Buggy, CE fixed below.
+  auto tXMLError = tree.Parse(rStringStream.str().c_str());
   if (tXMLError != tinyxml2::XMLError::XML_SUCCESS)
   {
     std::printf("Reading XML tree in AutoIP NetScan result failed.");
-    return false;
+    //return false; //Buggy, CE fixed below
+    return DeviceInfo();
   }
 
   DeviceInfo dI;
@@ -153,40 +155,48 @@ VisionaryAutoIPScan::parseAutoIPXml(std::stringstream& rStringStream)
   dI.Port       = "";
   dI.SubNet     = "";
 
-  tinyxml2::XMLNode const* const ptDataSetsTree = tree.FirstChildElement("NetScanResult");
-  if (ptDataSetsTree != 0)
+  //tinyxml2::XMLNode const* const ptDataSetsTree = tree.FirstChildElement("NetScanResult"); //Buggy, CE fixed below.
+  auto* pElement = tree.FirstChildElement("NetScanResult");
+  //if (ptDataSetsTree != 0) //Buggy, CE fixed below.
+  if (pElement)
   {
     // Query XML attributes
-    tinyxml2::XMLAttribute const* ptAttr = 0;
+    //tinyxml2::XMLAttribute const* ptAttr = 0;
 
-    ptAttr = ptDataSetsTree->FindAttribute("DeviceType");
-    if (ptAttr != 0)
+    //ptAttr = ptDataSetsTree->FindAttribute("DeviceType"); //Buggy, CE fixed below
+    tinyxml2::XMLAttribute const* ptAttrDevType = pElement->FindAttribute("DeviceType");
+    //if (ptAttr != 0) //Buggy, CE fixed below
+    if (ptAttrDevType)
     {
-      dI.DeviceName = ptAttr->Value();
+      dI.DeviceName = ptAttrDevType->Value();
     }
 
-    ptAttr = ptDataSetsTree->FindAttribute("IPAddress");
-    if (ptAttr != 0)
+    //ptAttr = ptDataSetsTree->FindAttribute("IPAddress");
+    tinyxml2::XMLAttribute const* ptAttrIPAdd = pElement->FindAttribute("IPAddress");
+    if (ptAttrIPAdd)
     {
-      dI.IpAddress = ptAttr->Value();
+      dI.IpAddress = ptAttrIPAdd->Value();
     }
 
-    ptAttr = ptDataSetsTree->FindAttribute("MACAddr");
-    if (ptAttr != 0)
+    //ptAttr = ptDataSetsTree->FindAttribute("MACAddr");
+    tinyxml2::XMLAttribute const* ptAttrMACAdd = pElement->FindAttribute("MACAddr");
+    if (ptAttrMACAdd)
     {
-      dI.MacAddress = ptAttr->Value();
+      dI.MacAddress = ptAttrMACAdd->Value();
     }
 
-    ptAttr = ptDataSetsTree->FindAttribute("HostPortNo");
-    if (ptAttr != 0)
+    //ptAttr = ptDataSetsTree->FindAttribute("HostPortNo");
+    tinyxml2::XMLAttribute const* ptAttrHostPortNo = pElement->FindAttribute("HostPortNo");
+    if (ptAttrHostPortNo)
     {
-      dI.Port = ptAttr->Value();
+      dI.Port = ptAttrHostPortNo->Value();
     }
 
-    ptAttr = ptDataSetsTree->FindAttribute("IPMask");
-    if (ptAttr != 0)
+    //ptAttr = ptDataSetsTree->FindAttribute("IPMask");
+    tinyxml2::XMLAttribute const* ptAttrIPMask = pElement->FindAttribute("IPMask");
+    if (ptAttrIPMask)
     {
-      dI.subNet = ptAttr->Value();
+      dI.SubNet = ptAttrIPMask->Value();
     }
   }
 
