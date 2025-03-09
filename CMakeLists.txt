@@ -6,6 +6,10 @@ if (NOT CMAKE_CONFIGURATION_TYPES AND NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Release)
 endif()
 
+## Add pybind11
+set(pybind11_DIR C:\\Users\\sensory\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\pybind11\\share\\cmake\\pybind11)
+find_package(pybind11 REQUIRED)
+
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
