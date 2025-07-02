@@ -1,0 +1,37 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build-msvc",
+        "type": "shell",
+        "command": "cmd",
+        "args": [
+          "/c",
+          "\"%ProgramFiles(x86)%\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Auxiliary\\Build\\vcvars64.bat\"",
+          "&&",
+          "cl",
+          "/std:c++20", "/EHsc", "/O2",
+          "/I", "include",
+          "src\\main.cpp",
+          "src\\SafeVisionaryData.cpp",
+          "src\\SafeVisionaryDataStream.cpp",
+          "src\\VisionaryData.cpp",
+          "src\\VisionaryDataStream.cpp",
+          "/link",
+          "ws2_32.lib"
+        ],
+        "options": {
+          "cwd": "${workspaceFolder}",
+          "shell": { "executable": "cmd.exe", "args": ["/d", "/c"] }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": [
+          "$msCompile"
+        ]
+      }
+    ]
+  }
+  

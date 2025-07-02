@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build-msvc",
+        "type": "shell",
+        "command": "cl",
+        "args": [
+          "/std:c++20",
+          "/EHsc",
+          "/O2",
+          "/I",
+          "include",
+          "src\\main.cpp",
+          "src\\SafeVisionaryData.cpp",
+          "src\\SafeVisionaryDataStream.cpp",
+          "src\\VisionaryData.cpp",
+          "src\\VisionaryDataStream.cpp",
+          "/link",
+          "ws2_32.lib"
+        ],
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": [
+          "$msCompile"
+        ]
+      }
+    ]
+  }
+  
