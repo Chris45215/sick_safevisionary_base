@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\apps\sv2_udp_dump\src\udp_dump.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\AuthenticationLegacy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\AuthenticationSecure.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\CRC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\CoLa2ProtocolHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\CoLaBProtocolHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\CoLaCommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\CoLaParameterReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\CoLaParameterWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\ControlSession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\IAuthentication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\IProtocolHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\MD5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\PointCloudPlyWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\SHA256.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\SafeVisionaryControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\SafeVisionaryData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\SafeVisionaryDataStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\TcpSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\UdpSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\VisionaryAutoIPScan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\VisionaryControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\VisionaryData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\VisionaryDataStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\src\tinyxml2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\sensory\Documents\GitHub\sick_safevisionary_base\apps\sv2_udp_dump\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{45985A8E-D29E-3CD4-BEFB-5920BC1135B4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

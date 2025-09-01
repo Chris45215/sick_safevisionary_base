@@ -1,0 +1,31 @@
+cmake_minimum_required(VERSION 3.18)
+project(sv2_udp_dump LANGUAGES CXX)
+
+# Path to the vendor source tree (adjust only if your layout differs)
+set(VENDOR_ROOT "${CMAKE_CURRENT_LIST_DIR}/../../")
+
+# Pull in JUST the minimal vendor sources we need.
+# If you see compile errors about missing symbols, add the corresponding .cpp here.
+set(VENDOR_SRCS
+  "${VENDOR_ROOT}/UdpSocket.cpp"
+  "${VENDOR_ROOT}/SafeVisionaryData.cpp"
+  "${VENDOR_ROOT}/SafeVisionaryDataStream.cpp"
+)
+
+add_executable(sv2_udp_dump
+  src/udp_dump.cpp
+  ${VENDOR_SRCS}
+)
+
+# Headers are in the vendor root (and possibly vendor/include too)
+target_include_directories(sv2_udp_dump PRIVATE
+  "${VENDOR_ROOT}"
+  "${VENDOR_ROOT}/include"
+)
+
+target_compile_features(sv2_udp_dump PRIVATE cxx_std_17)
+
+# Windows needs Winsock
+if (WIN32)
+  target_link_libraries(sv2_udp_dump PRIVATE ws2_32)
+endif()

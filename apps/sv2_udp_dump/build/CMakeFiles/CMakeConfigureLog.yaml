@@ -24,7 +24,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.19+164abd434 for .NET Framework
-      Build started 9/1/2025 2:15:31 AM.
+      Build started 9/1/2025 3:12:12 AM.
       
       Project "C:\\Users\\sensory\\Documents\\GitHub\\sick_safevisionary_base\\apps\\sv2_udp_dump\\build\\CMakeFiles\\3.29.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -53,7 +53,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.18
+      Time Elapsed 00:00:01.13
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -72,8 +72,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/sensory/Documents/GitHub/sick_safevisionary_base/apps/sv2_udp_dump/build/CMakeFiles/CMakeScratch/TryCompile-y4lx9j"
-      binary: "C:/Users/sensory/Documents/GitHub/sick_safevisionary_base/apps/sv2_udp_dump/build/CMakeFiles/CMakeScratch/TryCompile-y4lx9j"
+      source: "C:/Users/sensory/Documents/GitHub/sick_safevisionary_base/apps/sv2_udp_dump/build/CMakeFiles/CMakeScratch/TryCompile-fd6944"
+      binary: "C:/Users/sensory/Documents/GitHub/sick_safevisionary_base/apps/sv2_udp_dump/build/CMakeFiles/CMakeScratch/TryCompile-fd6944"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -83,40 +83,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/sensory/Documents/GitHub/sick_safevisionary_base/apps/sv2_udp_dump/build/CMakeFiles/CMakeScratch/TryCompile-y4lx9j'
+        Change Dir: 'C:/Users/sensory/Documents/GitHub/sick_safevisionary_base/apps/sv2_udp_dump/build/CMakeFiles/CMakeScratch/TryCompile-fd6944'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_fe14f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_79ffe.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.19+164abd434 for .NET Framework
-        Build started 9/1/2025 2:15:33 AM.
+        Build started 9/1/2025 3:12:14 AM.
         
-        Project "C:\\Users\\sensory\\Documents\\GitHub\\sick_safevisionary_base\\apps\\sv2_udp_dump\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y4lx9j\\cmTC_fe14f.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\sensory\\Documents\\GitHub\\sick_safevisionary_base\\apps\\sv2_udp_dump\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fd6944\\cmTC_79ffe.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_fe14f.dir\\Debug\\".
+          Creating directory "cmTC_79ffe.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\sensory\\Documents\\GitHub\\sick_safevisionary_base\\apps\\sv2_udp_dump\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y4lx9j\\Debug\\".
-          Creating directory "cmTC_fe14f.dir\\Debug\\cmTC_fe14f.tlog\\".
+          Creating directory "C:\\Users\\sensory\\Documents\\GitHub\\sick_safevisionary_base\\apps\\sv2_udp_dump\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fd6944\\Debug\\".
+          Creating directory "cmTC_79ffe.dir\\Debug\\cmTC_79ffe.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_fe14f.dir\\Debug\\cmTC_fe14f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_fe14f.dir\\Debug\\cmTC_fe14f.tlog\\unsuccessfulbuild".
+          Creating "cmTC_79ffe.dir\\Debug\\cmTC_79ffe.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_79ffe.dir\\Debug\\cmTC_79ffe.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_fe14f.dir\\Debug\\\\" /Fd"cmTC_fe14f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_79ffe.dir\\Debug\\\\" /Fd"cmTC_79ffe.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35215 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_fe14f.dir\\Debug\\\\" /Fd"cmTC_fe14f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_79ffe.dir\\Debug\\\\" /Fd"cmTC_79ffe.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\sensory\\Documents\\GitHub\\sick_safevisionary_base\\apps\\sv2_udp_dump\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y4lx9j\\Debug\\cmTC_fe14f.exe" /INCREMENTAL /ILK:"cmTC_fe14f.dir\\Debug\\cmTC_fe14f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/sensory/Documents/GitHub/sick_safevisionary_base/apps/sv2_udp_dump/build/CMakeFiles/CMakeScratch/TryCompile-y4lx9j/Debug/cmTC_fe14f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/sensory/Documents/GitHub/sick_safevisionary_base/apps/sv2_udp_dump/build/CMakeFiles/CMakeScratch/TryCompile-y4lx9j/Debug/cmTC_fe14f.lib" /MACHINE:X64  /machine:x64 cmTC_fe14f.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_fe14f.vcxproj -> C:\\Users\\sensory\\Documents\\GitHub\\sick_safevisionary_base\\apps\\sv2_udp_dump\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y4lx9j\\Debug\\cmTC_fe14f.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\sensory\\Documents\\GitHub\\sick_safevisionary_base\\apps\\sv2_udp_dump\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fd6944\\Debug\\cmTC_79ffe.exe" /INCREMENTAL /ILK:"cmTC_79ffe.dir\\Debug\\cmTC_79ffe.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/sensory/Documents/GitHub/sick_safevisionary_base/apps/sv2_udp_dump/build/CMakeFiles/CMakeScratch/TryCompile-fd6944/Debug/cmTC_79ffe.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/sensory/Documents/GitHub/sick_safevisionary_base/apps/sv2_udp_dump/build/CMakeFiles/CMakeScratch/TryCompile-fd6944/Debug/cmTC_79ffe.lib" /MACHINE:X64  /machine:x64 cmTC_79ffe.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_79ffe.vcxproj -> C:\\Users\\sensory\\Documents\\GitHub\\sick_safevisionary_base\\apps\\sv2_udp_dump\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fd6944\\Debug\\cmTC_79ffe.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_fe14f.dir\\Debug\\cmTC_fe14f.tlog\\unsuccessfulbuild".
-          Touching "cmTC_fe14f.dir\\Debug\\cmTC_fe14f.tlog\\cmTC_fe14f.lastbuildstate".
-        Done Building Project "C:\\Users\\sensory\\Documents\\GitHub\\sick_safevisionary_base\\apps\\sv2_udp_dump\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y4lx9j\\cmTC_fe14f.vcxproj" (default targets).
+          Deleting file "cmTC_79ffe.dir\\Debug\\cmTC_79ffe.tlog\\unsuccessfulbuild".
+          Touching "cmTC_79ffe.dir\\Debug\\cmTC_79ffe.tlog\\cmTC_79ffe.lastbuildstate".
+        Done Building Project "C:\\Users\\sensory\\Documents\\GitHub\\sick_safevisionary_base\\apps\\sv2_udp_dump\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fd6944\\cmTC_79ffe.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.00
+        Time Elapsed 00:00:00.98
         
       exitCode: 0
   -

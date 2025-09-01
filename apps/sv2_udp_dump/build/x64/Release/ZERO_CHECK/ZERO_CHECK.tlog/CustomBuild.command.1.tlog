@@ -1,0 +1,10 @@
+^C:\USERS\SENSORY\DOCUMENTS\GITHUB\SICK_SAFEVISIONARY_BASE\APPS\SV2_UDP_DUMP\BUILD\CMAKEFILES\2F30333049F8412FE8C66D3766233B34\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/sensory/Documents/GitHub/sick_safevisionary_base/apps/sv2_udp_dump -BC:/Users/sensory/Documents/GitHub/sick_safevisionary_base/apps/sv2_udp_dump/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/sensory/Documents/GitHub/sick_safevisionary_base/apps/sv2_udp_dump/build/sv2_udp_dump.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
